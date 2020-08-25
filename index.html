@@ -6,6 +6,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
   <style>
     table h4{
       font-weight: bold;
@@ -39,20 +41,17 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
-
       <div class="navbar-brand">
         <a class="navbar-item is-size-4 has-text-weight-semibold" href="https://bulma.io">
           GitHub Job
         </a>
-
         <a role="button" id="navbar-burger" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-
-      <div id="navbar-menu" class="navbar-menu">
+      <div id="navbar-menu" class="navbar-menu has-dropdown ">
         <div class="navbar-start">
           <a class="navbar-item">
             Discover
@@ -124,6 +123,23 @@
       </div>
     </div>
   </section>
+  
+
+  <template>
+    <tr>
+      <td>
+        <h4><a href=""></a></h4>
+        <p class="source">
+        <a class="company" href=""></a>
+        –
+        <strong class="fulltime"></strong>
+        </p>
+      </td>
+      <td class="meta">
+        <span class="location"></span>
+      </td>
+    </tr>
+  </template>
 
   <!-- <script src="index.js"></script> -->
   <!-- <script src="job.js"></script> -->
