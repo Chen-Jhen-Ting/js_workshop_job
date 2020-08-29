@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded',function(){
         let description = document.querySelector('[name="description"]')
         let location = document.querySelector('[name="location"]')
         let fullTime = document.querySelector('[name="full_time"]')
-        let url = `https://js-github-server.herokuapp.com/positions.json?`
+        let url=`https://still-spire-37210.herokuapp.com/positions.json?`
         
         url = `${url}`+ `description=${description.value}`+ `&location=${location.value}`
         
